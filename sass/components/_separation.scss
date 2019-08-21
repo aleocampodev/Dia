@@ -1,0 +1,49 @@
+.header-box{
+    margin-bottom:-45px;
+    margin-left:150px;      
+
+    &__title{
+        margin-bottom:15px;
+        width:560px;
+    }
+    
+
+    &__bold--1{ 
+        font-size:1.8em;
+        font-weight:900;
+        color:$color-white;
+        
+    }
+
+    &__text{
+        font-size:0.95em;
+        color:$color-white;
+        /*width:490px;*/
+    }
+
+    &__button{
+        width:143px;
+        height:30px;
+        font-weight:700;
+        transition:all 2s;
+        border-radius:30px;
+        background-color:$color-white;
+        padding-top:4px;
+        margin-top:23px;
+        
+
+        &:hover,
+        &:active{
+            background-color:$color-orange;
+        }
+    }
+
+ 
+
+    &__link{
+        font-size:0.6em;
+        color:#000;
+        text-decoration:none;
+        margin:0 25% 25% 30%;
+    }
+}

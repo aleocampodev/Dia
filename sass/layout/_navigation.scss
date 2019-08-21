@@ -1,0 +1,48 @@
+.nav{
+    margin-top:6px;
+    display:flex;
+    list-style:none;
+    flex-basis:245px;
+
+    & li{
+        margin-right:48px;
+        flex:1 0 auto;
+
+       /* &:nth-child(4){
+            margin-left:-8px;
+        }*/
+
+        &:nth-child(5){
+            margin-left:-10px;
+        }
+
+        &:last-child{
+            margin-left:30px;
+
+            @include col1;
+            
+        }
+
+
+        & a{
+            font-weight:bold;
+            font-size:0.6em;
+
+            &:link,
+            &:visited{
+                color:$color-white;
+                text-decoration: none;
+            }
+        
+            &:hover,
+            &:active{
+                color:$color-white;
+                border-bottom:2px solid $color-orange; 
+                transition:border-bottom 0.2s, color 0.2s;
+                padding-bottom:5px;
+            }
+
+        
+        }
+    }  
+}

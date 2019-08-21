@@ -1,0 +1,45 @@
+.wedo{
+    margin-top:60px;
+    width:930px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    &__title{
+        color:$color-black;
+        font-weight:900;
+        font-size:1.6em;
+    }
+
+    &__boxes{
+        display:flex;
+        width:930px;
+        justify-content:center;
+        align-items:center;
+        margin-top:55px;  
+    }
+}
+
+.box{
+    margin-right:57px; 
+
+    &__img{
+        width:90px;
+        height:90px;
+        border-radius:50%;
+
+    }
+
+    &__text{
+        font-size:0.8em;
+        font-weight:900; 
+        width:190px;  
+        margin-top:30px;
+    }
+
+    &__paragraph{
+        font-size:0.6em;
+        margin-top:10px;
+    }
+}

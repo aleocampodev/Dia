@@ -1,0 +1,13 @@
+@mixin col{
+    transform:skew(25deg);
+    margin-top:37px;
+    white-space: nowrap;
+    color:$color-white;
+    font-weight:bold;
+
+}
+
+@mixin col1{
+    border-bottom:2px solid $color-orange;
+    padding-bottom:5px;;
+}

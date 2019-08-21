@@ -1,0 +1,85 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+html{
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+body{
+    position:relative;
+}
+
+.background{
+    width:100px;
+    height:300px;
+    background:linear-gradient( 90deg,rgba(255,255,255,0.15) 0%,rgba(255,255,255,0) 50%),$color-blue;
+    position:absolute;
+    transform:skewX(-35deg);
+    top:-185px;   
+
+}
+
+.background-one{
+    width:150px;
+    height:500px;
+    background:linear-gradient( 90deg,rgba(255,255,255,0.15) 0%,rgba(255,255,255,0) 50%),$color-blue;
+    position:absolute;
+    transform:skewX(-35deg);  
+    top:-144px;  
+}
+
+.background-two{
+    width:200px;
+    height:600px;
+    background:linear-gradient( 90deg,rgba(255,255,255,0.15) 0%,rgba(255,255,255,0) 50%),$color-blue;
+    position: absolute;
+    transform:skewX(-35deg);
+    top:-55px;
+}
+
+.background-three{
+    width:70px;
+    height:900px;
+    background:linear-gradient( 90deg,rgba(255,255,255,0.15) 0%,rgba(255,255,255,0) 50%),$color-blue;
+    position: absolute;
+    transform: skewX(-35deg);
+    top:-65px;
+}
+
+
+
+.container-main{
+    background:white;
+    margin:30px 30px;
+    width:1000px;
+    height:6200px;
+    overflow:hidden;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.05);
+}
+
+.section-intro{
+    height:500px;
+    position: relative;
+    top:-245px;
+}  
+
+.section-about{ 
+    margin-top:375px;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items:center;
+}
+
+.section-process{
+    margin-top:155px;
+}
+
+.section-feature{
+    margin-top:97px;
+    height:510px;     
+}
+ 

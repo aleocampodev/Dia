@@ -1,0 +1,103 @@
+.feature{
+    background:$color-blue;
+    height:100%;
+
+    &__boxtext{
+        width:350px;
+        height:330px;
+        position:relative;
+        top:110px;
+        margin-left:80px;
+       
+  
+    }    
+    
+    &__left{
+        width:368px;   
+        height:510px;
+        position:relative;
+        top:-510px;
+        left:580px;  
+        transform:skewX(-30deg);
+        background:url('../../img/team-min.jpg');
+    }
+
+    &__right{
+        width:400px;   
+        height:900px;
+        border-radius:200px;  
+        background:linear-gradient(180deg, rgba(255,255,255,0.25)0% , rgba(255, 255, 255, 0) 100%) , $color-green;
+        transform:rotate(30deg);
+        position:relative;
+        top:-990px;   
+        left:845px;    
+    }    
+} 
+
+
+  
+
+.features{
+    margin-top:15px;
+    
+
+    &__title{
+        font-weight:900;
+    }
+
+    &__sound{
+        display:flex;
+        margin-top:25px;
+        
+    }
+
+    &__calendary{
+        display:flex;
+        margin-top:25px;
+    }
+
+    &__book{
+        display:flex;
+        margin-top: 25px;
+    }
+
+    &__box{
+        background:$color-white;  
+        margin-right:15px;
+        width:35px;
+        height:35px;
+        border-radius:50%;
+        margin-top:5px;
+
+        
+    }
+
+    &__img{
+        width:13px;  
+        height:13px;
+
+        &--1{
+            margin-top:12px;
+            margin-left:12px;        
+
+        }
+
+        &--2{
+            margin-top:12px;
+            margin-left:11px;   
+        }
+
+        &--3{
+            
+        }
+        
+        
+    }
+
+    &__paragraph{
+        font-size:0.5em;
+        color:$color-white;
+    }
+
+
+}

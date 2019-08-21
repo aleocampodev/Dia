@@ -1,0 +1,23 @@
+@import 'abstracts/mixins';
+@import 'abstracts/variables';
+
+
+@import 'base/base';
+@import 'base/animation';
+@import 'base/typography';
+@import 'base/utilities';
+ 
+@import 'components/separation';
+@import 'components/intro-slider';
+@import 'components/social';
+@import 'components/welcome';
+@import 'components/wedo';
+@import 'components/box-title';
+@import 'components/process';
+@import 'components/feature';     
+
+@import 'layout/header';
+@import 'layout/navigation';  
+
+
+@import './queries.scss';

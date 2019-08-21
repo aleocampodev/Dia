@@ -1,0 +1,72 @@
+.intro{
+    width:1000px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.container{
+    width:796px;
+    height:400px;
+
+    &__slider--1{ 
+        width:89%; 
+        height:100%;
+        background-image:url('../img/meeting-min.jpg');
+        margin:0 0 0 54px;
+        background-size:cover;
+        background-repeat:no-repeat;
+        background-position-y:-38px; 
+        display:flex;
+        align-items:flex-end;
+    }
+
+    &__buttons{
+        position:absolute;
+        top:190px;
+        left:81px;
+        width:110px;
+        height:39px;
+        background:$color-orange;
+        border-radius:30px;
+
+    }
+
+}
+
+.buttons{
+     &__left{
+            margin-top:12px;
+            margin-left:20px;
+     }
+
+     &__right{
+        margin-left:42px;
+     }
+}
+
+.slider-text{
+    margin-left:52px;
+    margin-bottom:65px;
+
+    &__title{
+        color:$color-blue;
+        text-transform:uppercase;
+        font-size:0.5em;
+        font-weight:900;
+    }
+
+    &__paragraph{
+        color:$color-white;
+        width:150px;
+        font-size:0.7em;
+        font-weight:800;
+    }
+}
+
+
+
+        
+
+ 
+

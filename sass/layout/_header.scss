@@ -1,0 +1,70 @@
+.header{
+    height:465px; 
+    position:relative;
+    width:100%;
+     
+    &__container{
+        background:$color-blue;
+        padding:25px 4px 80px 45px;
+        display:flex;
+        width:70%;
+        height:100%;
+        flex-wrap:wrap;
+    }
+
+
+    &__banner{
+        display:flex;
+    }
+
+    &__nav{
+        z-index:1; 
+    }
+
+    &__paragraph{ 
+        flex:0 1 auto;
+        margin-right:90px;
+        margin-left:90px;
+        font-size:1.6em;
+        color:$color-white;
+        font-weight: bold;
+
+    }
+
+    &__separation{
+        z-index:1;
+        margin-bottom:180px;
+        /*position:relative;*/
+    }
+
+    &__box2{
+        background:linear-gradient( 90deg,rgba(255,255,255,0.15) 0%,rgba(255,255,255,0) 50%),$color-blue;
+        height:500px;
+        width:210px;
+        position:absolute;
+        top:0;
+        left:470px;
+        transform:$transform-skew;
+    }
+    
+
+    &__box3{
+        background:linear-gradient(90deg,rgba(255,255,255,0.25) 0% , rgba(255,255,255,0) 50%),$color-blue;
+        height:500px;
+        width:210px;
+        position:absolute;
+        top:0;
+        left:665px;
+        transform:$transform-skew;
+    }
+
+    &__box4{
+        background: linear-gradient(90deg,rgba(255,255,255,.25) 0% ,rgba(255,255,255,0) 50%),$color-blue;
+        height:500px;
+        width:25px;
+        position:absolute;
+        top:0;
+        left:868px;
+        transform:$transform-skew;
+    }
+}
