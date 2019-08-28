@@ -1,25 +1,22 @@
 .feature{
     background:$color-blue;
-    height:100%;
+    height:550px;
 
     &__boxtext{
         width:350px;
         height:330px;
         position:relative;
         top:110px;
-        margin-left:80px;
+        margin-left:150px;
        
   
     }    
     
     &__left{
-        width:368px;   
-        height:510px;
         position:relative;
-        top:-510px;
-        left:580px;  
-        transform:skewX(-30deg);
-        background:url('../../img/team-min.jpg');
+        top:-550px;
+        left:310px;  
+
     }
 
     &__right{
@@ -31,7 +28,12 @@
         position:relative;
         top:-990px;   
         left:845px;    
-    }    
+    }   
+    
+    &__img{
+        width:760px;
+        height:550px;
+    }
 } 
 
 

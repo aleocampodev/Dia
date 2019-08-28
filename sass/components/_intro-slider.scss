@@ -5,26 +5,28 @@
     align-items:center;
 }
 
-.container{
-    width:796px;
+.containers{
+    width:903px;
     height:400px;
+    margin-left:23px;
 
     &__slider--1{ 
-        width:89%; 
+        width:770px; 
         height:100%;
-        background-image:url('../img/meeting-min.jpg');
+        background-image:linear-gradient(0deg,rgba(37,55,87,0.1),rgba(37,55,87,0.1)),url('../img/meeting-min.jpg');
         margin:0 0 0 54px;
         background-size:cover;
         background-repeat:no-repeat;
         background-position-y:-38px; 
         display:flex;
         align-items:flex-end;
+        margin-left:129px;
     }
 
     &__buttons{
         position:absolute;
         top:190px;
-        left:81px;
+        left:98px;
         width:110px;
         height:39px;
         background:$color-orange;
@@ -47,7 +49,7 @@
 
 .slider-text{
     margin-left:52px;
-    margin-bottom:65px;
+    margin-bottom:38px;
 
     &__title{
         color:$color-blue;
@@ -60,7 +62,8 @@
         color:$color-white;
         width:150px;
         font-size:0.7em;
-        font-weight:800;
+        font-weight:900;
+        font-family:'Muli',sans-serif;
     }
 }
 

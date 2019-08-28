@@ -1,15 +1,17 @@
 .header{
-    height:465px; 
+    height:460px; 
     position:relative;
     width:100%;
+    display:flex;
+   
      
     &__container{
         background:$color-blue;
         padding:25px 4px 80px 45px;
         display:flex;
-        width:70%;
+        width:600px;
         height:100%;
-        flex-wrap:wrap;
+        flex-wrap:wrap; 
     }
 
 
@@ -24,7 +26,7 @@
     &__paragraph{ 
         flex:0 1 auto;
         margin-right:90px;
-        margin-left:90px;
+        margin-left:102px;  
         font-size:1.6em;
         color:$color-white;
         font-weight: bold;
@@ -37,34 +39,32 @@
         /*position:relative;*/
     }
 
+    
     &__box2{
         background:linear-gradient( 90deg,rgba(255,255,255,0.15) 0%,rgba(255,255,255,0) 50%),$color-blue;
         height:500px;
-        width:210px;
-        position:absolute;
-        top:0;
-        left:470px;
-        transform:$transform-skew;
+        width:209px;
+        position:absolute;            
+        left:503px;          
+        transform:$transform-skew;  
     }
     
 
     &__box3{
         background:linear-gradient(90deg,rgba(255,255,255,0.25) 0% , rgba(255,255,255,0) 50%),$color-blue;
         height:500px;
-        width:210px;
-        position:absolute;
-        top:0;
-        left:665px;
+        width:235px;
         transform:$transform-skew;
+        position: absolute;
+        left:710px;    
     }
 
     &__box4{
         background: linear-gradient(90deg,rgba(255,255,255,.25) 0% ,rgba(255,255,255,0) 50%),$color-blue;
         height:500px;
-        width:25px;
-        position:absolute;
-        top:0;
-        left:868px;
+        width:28px;
         transform:$transform-skew;
+        position:relative;
+        left:295px;
     }
 }
