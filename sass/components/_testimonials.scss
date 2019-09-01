@@ -1,0 +1,126 @@
+.testimonials{
+    margin-left:155px;
+
+    &__title{
+        font-weight:900;
+        margin-top:5px;
+    }
+
+    &__boxes{
+        display:flex;
+        width:750px;
+        margin-top:35px;
+        position:relative;
+    }
+
+    &__box1{
+
+        @include size;
+    }
+
+    &__box2{
+
+        @include size;
+    }
+
+    &__box3{
+
+        @include size;
+    }
+
+}
+
+.boxs{
+    &__paragraph{
+        font-size:0.5em;
+        text-align:center;
+        margin-top:10px;
+    }
+
+    &__head{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__name{
+        font-size:0.5em;
+        font-weight:800;
+    }
+
+    &__profession{
+        font-size:0.5em;
+        font-weight:900;
+        text-transform: uppercase;
+        letter-spacing:1px;
+
+        &--1{
+            color:$color-blue;  
+        }
+
+        &--2{
+            color:$color-orange;
+        }
+
+        &--3{
+            color:$color-red;
+        }
+    }
+
+    &__mains{
+        display:flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items:center;
+    }
+
+    &__line{
+        width:42px;
+        height:1px;
+        background:red; 
+        margin-top:10px; 
+        margin-bottom:10px;
+
+        &--1{
+            background:linear-gradient(180deg,rgba(255,255,255,0.25) 0%,rgba(255,255,255,0)100%),$color-blue;
+        }
+
+        &--2{
+            background:linear-gradient(180deg,rgba(255,255,255,0.25) 0%,rgba(255,255,255,0)100%),$color-orange;
+        }
+
+        &--3{
+            background:linear-gradient(180deg,rgba(255,255,255,0.25) 0%,rgba(255,255,255,0)100%),$color-red;
+        }
+    }
+}
+
+.head{
+    &__box{
+        width:30px;
+        height:80px;
+        border-radius: 25px;
+        transform:rotate(25deg);
+        margin-top:45px;
+
+        &--1{
+            background:linear-gradient(180deg,rgba(255,255,255,0.25) 0%,rgba(255,255,255,0)100%),$color-blue;
+        }
+
+        &--2{
+            background:linear-gradient(180deg,rgba(255,255,255,0.25) 0%,rgba(255,255,255,0)100%),$color-orange;
+        }
+
+        &--3{
+            background:linear-gradient(180deg,rgba(255,255,255,0.25) 0%,rgba(255,255,255,0)100%),$color-red;
+        }
+    }
+
+    &__img{
+         width:50px;  
+         height:70px;
+         position:absolute;
+         z-index:1;
+         top:65px;  
+    }
+}

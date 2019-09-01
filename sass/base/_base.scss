@@ -4,16 +4,15 @@
 }
 
 html{
-    overflow-x: hidden;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 body{
-   position:relative;
+   position:relative
 }
 
 .row{
-    background:red;
     max-width:1200px;
     margin:0 auto;
 }
@@ -39,8 +38,27 @@ body{
 }
 
 .section-feature{
-    margin-top:69px;
+    margin-top:139px;
     height:510px;   
+}
+
+.section-testimonials{
+    margin-top:125px;
+}
+
+.section-objetives{
+    margin-top:215px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:320px;
+}
+
+.section-information{
+    margin-top:-145px;   
+    display:flex;
+    justify-content:center;
+    align-items:center;
 }
 
  

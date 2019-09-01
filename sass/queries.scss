@@ -1,15 +1,48 @@
 @media only screen and (min-width:1201px){
+    body{
+        overflow-x: hidden;
+    }
 
-}
+    .process__left{
+        margin-left:9%;
+    }
+
+    .feature__boxtext{
+        margin-left:19%;
+    }
+
+    .testimonials{
+        margin-left:19%;
+    }
+
+}           
 
 @media only screen and (max-width:1200px){
+    
     
 }
 
 @media only screen and (max-width:900px){
+    .row{
+        margin:0 auto;
+    }
+
+    .feature{
+        width:1200px;
+    }
 
     .wedo__boxes{
         display:flex;
         flex-direction:column;
     }
+
+    .objetives{
+        width:1200px;
+
+        &__text{
+            width:0;
+        }
+    }
+
+    
 }

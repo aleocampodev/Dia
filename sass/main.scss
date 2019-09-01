@@ -14,10 +14,14 @@
 @import 'components/wedo';
 @import 'components/box-title';
 @import 'components/process';
-@import 'components/feature';     
+@import 'components/feature';
+@import 'components/testimonials';   
+@import 'components/objetives';  
+@import 'components/information' ;
 
 @import 'layout/header';
-@import 'layout/navigation';  
+@import 'layout/navigation';
+@import 'layout/footer';
 
 
 @import './queries.scss';

@@ -7,17 +7,18 @@
 
 .containers{
     width:903px;
-    height:400px;
+    height:415px;
     margin-left:23px;
+    position:relative;
 
     &__slider--1{ 
         width:770px; 
         height:100%;
-        background-image:linear-gradient(0deg,rgba(37,55,87,0.1),rgba(37,55,87,0.1)),url('../img/meeting-min.jpg');
+        background-image: url('../img/team-min.png');
         margin:0 0 0 54px;
         background-size:cover;
         background-repeat:no-repeat;
-        background-position-y:-38px; 
+        background-position-y:-3px; 
         display:flex;
         align-items:flex-end;
         margin-left:129px;
@@ -26,7 +27,7 @@
     &__buttons{
         position:absolute;
         top:190px;
-        left:98px;
+        left:75px;
         width:110px;
         height:39px;
         background:$color-orange;
@@ -48,7 +49,7 @@
 }
 
 .slider-text{
-    margin-left:52px;
+    margin-left:75px;
     margin-bottom:38px;
 
     &__title{

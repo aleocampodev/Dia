@@ -1,0 +1,13 @@
+/*@-webkit-keyframes move {
+	from { background:#5264AE; }
+    to 	{ width:0; background:transparent; }
+}
+@-moz-keyframes move {
+	from { padding-top:45px; }
+    to 	{ width:0; background:transparent; }
+}*/
+
+@keyframes move {
+    from { background:#5264AE; }
+  to 	{ width:0; background:transparent; }
+}

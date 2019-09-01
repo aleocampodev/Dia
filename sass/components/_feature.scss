@@ -1,6 +1,8 @@
 .feature{
     background:$color-blue;
     height:550px;
+    display:flex;
+    position:relative;
 
     &__boxtext{
         width:350px;
@@ -10,29 +12,31 @@
         margin-left:150px;
        
   
-    }    
-    
-    &__left{
-        position:relative;
-        top:-550px;
-        left:310px;  
-
     }
 
     &__right{
-        width:400px;   
-        height:900px;
-        border-radius:200px;  
-        background:linear-gradient(180deg, rgba(255,255,255,0.25)0% , rgba(255, 255, 255, 0) 100%) , $color-green;
-        transform:rotate(30deg);
-        position:relative;
-        top:-990px;   
-        left:845px;    
-    }   
+        position:absolute;
+        top:2px;
+        right:-1px;
+    }
+
+
+    
+    &__left{
+        position:absolute;
+
+        right:-1px; 
+
+    }
     
     &__img{
-        width:760px;
+        width:767px;
         height:550px;
+    }
+
+    &__img1{
+        width:340px;
+        height:900px;   
     }
 } 
 
@@ -90,7 +94,8 @@
         }
 
         &--3{
-            
+            margin-top:12px;
+            margin-left:11px;
         }
         
         

@@ -52,6 +52,8 @@
 
     &__three{
         margin-right:25px;
+        position:absolute;
+        z-index:1;
         
     }
 
@@ -65,30 +67,30 @@
 
 .boxestexts{
     background:$color-white;
-    width:150px;
-    height:160px;  
+    width:140px;
+    height:140px;  
     box-shadow: 5px 5px 8px rgba(0,0,0,0.05);
     position:absolute;
     z-index:1;
 
     &--1{
-        margin-top:78px;
+        margin-top:85px;
         margin-left:-32px;        
     }
 
     &--2{
         margin-left:159px;
-        margin-top:30px;  
+        margin-top:20px;  
     }
 
     &--3{
-        margin-top:248px;
+        margin-top:288px;
         margin-left:-32px;  
     }
 
     &--4{  
         margin-left:185px;   
-        margin-top:-40px;      
+        margin-top:220px;      
     }
 
     
@@ -105,7 +107,7 @@
 .boxcolor{
 
     width:10px;
-    height:240px;
+    height:228px;
     border-radius:30px; 
     transform: rotate(23deg);
     position:absolute;
@@ -118,21 +120,21 @@
 
     &--2{
         background:linear-gradient(180deg, rgba(255,255,255,0.25)0% , rgba(255, 255, 255, 0) 100%) , $color-orange;
-        top:-8px;   
+        top:-25px;   
         left:258px;    
     }
 
     &--3{
         background:linear-gradient(180deg, rgba(255,255,255,0.25)0% , rgba(255, 255, 255, 0) 100%) , $color-green;
         position:relative;
-        top:207px;
+        top:245px;
         left:45px;    
     }
 
     &--4{
         background: linear-gradient(180deg, rgba(255,255,255,0.25)0% , rgba(255, 255, 255, 0) 100%) , $color-red;
-        top:-78px;
-        left:260px; 
+        top:179px;
+        left:265px; 
     }
 
 

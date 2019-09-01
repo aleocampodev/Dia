@@ -1,0 +1,89 @@
+.information{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+
+    &__left{
+        width:415px;
+        margin-right:65px;
+        margin-top:15px;
+
+    }
+
+    &__right{
+        width:250px;
+        margin-top:-40px;
+    }
+
+    &__form{
+        margin-top:45px;
+        position:relative;
+    }
+
+    &__title{
+        font-weight:900;
+        margin-top:9px;
+    }
+
+    &__call{
+        margin-top:10px;
+    }
+
+    &__visit{
+        margin-top:15px;
+    }
+
+    &__social{
+        margin-top:20px;
+    }
+
+   
+}
+
+.form{
+    margin-top:30px;
+    position:relative;
+
+    &__input{
+        border:none;
+        border-bottom:1px solid gray;
+        width:400px;
+
+    }
+
+    &__label{
+        font-weight:900;
+        font-size:0.5em;
+        position:absolute;
+        z-index:1;
+        right:360px;
+
+        &--1{
+            right:370px;
+        }
+
+    }
+}
+
+input[type=button]{
+    width:110px;
+    height:28px;
+    background:$color-blue-dark;
+    border:none;
+    border-radius:25px;
+    margin-top:55px;
+}
+
+input[value]{
+    color:$color-white;
+    font-size:0.7em;
+}
+
+.social{
+    &__instagram{
+        margin-left:20px;
+        margin-right:20px;
+    }
+}
+

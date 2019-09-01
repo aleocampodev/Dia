@@ -1,0 +1,23 @@
+.footer{
+    margin-top:75px;
+    
+    &__list{
+        display:flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        margin-right:135px;
+    }
+
+    &__item{
+        list-style:none;
+        margin-right:45px;
+
+    }
+
+    &__link{
+        text-decoration: none;
+        font-size:0.6em;
+        font-weight:800;
+        color:$color-black;
+    }
+}

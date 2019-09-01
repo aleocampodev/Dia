@@ -11,3 +11,20 @@
     border-bottom:2px solid $color-orange;
     padding-bottom:2px;
 }
+
+@mixin size{
+    width:200px;
+    height:250px;
+    box-shadow:7px 7px 25px rgba(0,0,0,0.05);  
+    background:$color-white;
+}
+
+@mixin margin{
+  @for $i from 1 through 3{
+      .mar-#{$i}{
+         margin:$margin * $i;
+      }
+  }
+}
+
+
