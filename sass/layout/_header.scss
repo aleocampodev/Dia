@@ -9,9 +9,17 @@
         background:$color-blue;
         padding:25px 4px 80px 45px;
         display:flex;
-        width:600px;
+        width:700px;
         height:100%;
         flex-wrap:wrap; 
+    }
+
+    &__left{
+        background:blue;
+        width:600px;
+        height:100%;
+        z-index:1;
+        align-self:flex-end;
     }
 
 
@@ -43,9 +51,9 @@
     &__box2{
         background:linear-gradient( 90deg,rgba(255,255,255,0.15) 0%,rgba(255,255,255,0) 50%),$color-blue;
         height:500px;
-        width:209px;
-        position:absolute;            
-        left:503px;          
+        width:309px;
+        position:relative;            
+        left:-233px;          
         transform:$transform-skew;  
     }
     
@@ -53,10 +61,10 @@
     &__box3{
         background:linear-gradient(90deg,rgba(255,255,255,0.25) 0% , rgba(255,255,255,0) 50%),$color-blue;
         height:500px;
-        width:235px;
+        width:335px;
         transform:$transform-skew;
-        position: absolute;
-        left:710px;    
+        position:relative;
+        left:-245px;    
     }
 
     &__box4{
@@ -65,6 +73,6 @@
         width:28px;
         transform:$transform-skew;
         position:relative;
-        left:295px;
+        left:-15px;
     }
 }
