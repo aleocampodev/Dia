@@ -1,23 +1,60 @@
 @media only screen and (min-width:1201px){
     body{
-        overflow-x: hidden;
+        overflow: hidden;   
     }
+
+    .header__container{
+        width:83%;
+    }
+    .header__box2::after{
+        position:absolute;
+        left:46%;
+        
+    }
+
+    
 
     .process__left{
         margin-left:9%;
     }
 
     .feature__boxtext{
-        margin-left:19%;
+        margin-left:22%;
     }
 
     .testimonials{
-        margin-left:19%;
+        margin-left:20%;
     }
 
 }           
 
 @media only screen and (max-width:1200px){
+    body{
+        overflow:hidden;
+    }
+
+    .header__box2:after{
+        left:40%;
+    }
+
+
+
+    .containers{
+        margin-left:-3.7%;
+    }
+
+    .section-feature{
+        width:100%;
+    }
+
+    .containers{
+        background:orange;
+        width:60%;
+
+        &__slider--1{
+            width:120%;
+        }
+    }
     
     
 }
@@ -25,6 +62,7 @@
 @media only screen and (max-width:900px){
     .row{
         margin:0 auto;
+        width:100%;
     }
 
     .feature{
@@ -39,10 +77,11 @@
     .objetives{
         width:1200px;
 
-        &__text{
-            width:0;
-        }
+    
     }
 
+    .feature{
+        width:100%
+    }
     
 }

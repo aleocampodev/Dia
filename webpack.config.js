@@ -71,7 +71,7 @@ module.exports = {
             loader:false
         }),*/
         new HtmlWebpackPlugin({
-            title:'..',
+            filename:'./index.html',
             template:'./index.html'
         }),
         new MiniCssExtractPlugin({

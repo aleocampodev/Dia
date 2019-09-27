@@ -1,33 +1,35 @@
 .intro{
-    width:1000px;
+    width:100%;
     display:flex;
     justify-content:center;
     align-items:center;
+    margin-top:-55px;
+    margin-left:18%;
 }
 
 .containers{
-    width:903px;
-    height:415px;
-    margin-left:23px;
+    width:1543px;
+    height:435px;
+    margin-left:-11px;
     position:relative;
 
     &__slider--1{ 
-        width:770px; 
+        width:1003px; 
         height:100%;
         background-image: url('../img/team-min.png');
         margin:0 0 0 54px;
-        background-size:cover;
+        background-size:100% 100%;
         background-repeat:no-repeat;
         background-position-y:-3px; 
         display:flex;
         align-items:flex-end;
-        margin-left:129px;
+        margin-left:101px;
     }
 
     &__buttons{
         position:absolute;
-        top:190px;
-        left:75px;
+        top:215px;
+        left:39px;
         width:110px;
         height:39px;
         background:$color-orange;
@@ -49,20 +51,20 @@
 }
 
 .slider-text{
-    margin-left:75px;
-    margin-bottom:38px;
+    margin-left:95px;
+    margin-bottom:68px;
 
     &__title{
         color:$color-blue;
         text-transform:uppercase;
-        font-size:0.5em;
+        font-size:0.7em;
         font-weight:900;
     }
 
     &__paragraph{
         color:$color-white;
-        width:150px;
-        font-size:0.7em;
+        width:180px;
+        font-size:0.8em;
         font-weight:900;
         font-family:'Muli',sans-serif;
     }

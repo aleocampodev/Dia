@@ -14,11 +14,11 @@
         }*/
 
         &:nth-child(5){
-            margin-left:-20px;
+            margin-left:-12px;
         }
 
         &:last-child{
-            margin-left:45px;  
+            margin-left:105px;  
 
             @include col1;
             
@@ -27,7 +27,7 @@
 
         & a{
             font-weight:bold;
-            font-size:0.6em;
+            font-size:0.7em;
 
             &:link,
             &:visited{

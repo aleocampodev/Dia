@@ -20,12 +20,12 @@ body{
 .section-intro{
     height:500px;
     position: relative;
-    top:-105px;
+    top:-75px;
     width:100%;
 }  
 
 .section-about{ 
-    margin-top:-99px;
+    margin-top:-45px;
     display:flex;
     flex-direction:column;
     justify-content: center;
@@ -34,20 +34,20 @@ body{
 }
 
 .section-process{
-    margin-top:155px;
+    margin-top:185px;
 }
 
 .section-feature{
-    margin-top:139px;
+    margin-top:159px;
     height:510px;   
 }
 
 .section-testimonials{
-    margin-top:125px;
+    margin-top:145px;
 }
 
 .section-objetives{
-    margin-top:215px;
+    margin-top:235px;
     display:flex;
     justify-content: center;
     align-items: center;
@@ -55,7 +55,7 @@ body{
 }
 
 .section-information{
-    margin-top:-145px;   
+    margin-top:-125px;   
     display:flex;
     justify-content:center;
     align-items:center;
