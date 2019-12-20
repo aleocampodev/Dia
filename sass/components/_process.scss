@@ -19,14 +19,15 @@
 
 .process-text{
     &__title{
-        font-size:0.95em;
+        font-size:1em;
         font-weight:900;
         margin-top:8px;
     }
 
     &__paragraph{
-        font-size:0.5em;
+        font-size:0.9em;
         margin-top:35px;
+        width:500px;
     }
 }
 
@@ -64,20 +65,20 @@
 
 .boxestexts{
     background:$color-white;
-    width:140px;
-    height:140px;  
+    width:170px;
+    height:170px;  
     box-shadow: 5px 5px 8px rgba(0,0,0,0.05);
     position:absolute;
     z-index:1;
 
     &--1{
-        margin-top:85px;
+        margin-top:55px;
         margin-left:-32px;        
     }
 
     &--2{
         margin-left:159px;
-        margin-top:20px;  
+        margin-top:15px; 
     }
 
     &--3{
@@ -94,7 +95,7 @@
 
 
     &__paragraph{
-        font-size:0.5em;
+        font-size:0.8em;
         text-align:center;  
         margin-top:15px;
 
@@ -104,20 +105,20 @@
 .boxcolor{
 
     width:10px;
-    height:228px;
+    height:248px;
     border-radius:30px; 
     transform: rotate(23deg);
     position:absolute;
     
     &--1{
         background:linear-gradient(180deg, rgba(255,255,255,0.25)0% , rgba(255, 255, 255, 0) 100%) , $color-blue;
-        top:38px; 
+        top:8px; 
         left:37px;             
     }
 
     &--2{
         background:linear-gradient(180deg, rgba(255,255,255,0.25)0% , rgba(255, 255, 255, 0) 100%) , $color-orange;
-        top:-25px;   
+        top:-29px;   
         left:258px;    
     }
 
@@ -142,8 +143,8 @@
     align-items:center;    
 
     &__box{
-        width:30px;
-        height:30px;
+        width:40px;
+        height:40px;
         border-radius:50%;
         opacity: 0.1;
 
@@ -171,7 +172,7 @@
         position:absolute;
         margin-top:15px;
         font-weight:900;
-        font-size:1.2em;
+        font-size:1.5em;
         text-transform: uppercase;
 
         &--1{

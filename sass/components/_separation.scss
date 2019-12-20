@@ -1,10 +1,10 @@
 .header-box{
-    margin-bottom:-45px;
-    margin-left:290px;      
+    margin-top:35px;
+    margin-right:-425px;     
 
     &__title{
         margin-bottom:15px;
-        width:560px;
+        width:50%;
     }
     
 
@@ -16,10 +16,10 @@
     }
 
     &__text{
-        font-size:0.95em;
+        font-size:1.2em;
         color:$color-white;
         /*width:490px;*/
-        width:550px;
+        width:58%;
     }
 
     &__button{
@@ -45,7 +45,7 @@
  
 
     &__link{
-        font-size:0.6em;
+        font-size:0.8em;
         color:#000;
         text-decoration:none;
         margin-top:-3px;

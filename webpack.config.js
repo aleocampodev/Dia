@@ -33,7 +33,9 @@ module.exports = {
                             hmr: process.env.NODE_ENV === 'development'
                         },
                     },
-                   'css-loader',
+                    {
+                        loader:'css-loader?url=false',
+                    },
                    'sass-loader',
                    {
                         loader:'sass-resources-loader',
@@ -55,7 +57,7 @@ module.exports = {
                             bypassOnDebug: true,
                             disable:true,
                         }
-                    }
+                    },
                 ]
             }
         ]

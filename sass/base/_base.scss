@@ -18,10 +18,10 @@ body{
 }
 
 .section-intro{
-    height:500px;
     position: relative;
     top:-75px;
     width:100%;
+    margin-bottom:5%;
 }  
 
 .section-about{ 
@@ -59,6 +59,10 @@ body{
     display:flex;
     justify-content:center;
     align-items:center;
+}
+
+#body{
+    display:none;
 }
 
  

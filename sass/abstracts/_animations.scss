@@ -1,0 +1,22 @@
+@keyframes slider{
+    0%{margin-left:0px;}
+    20%{margin-left:0px;}
+
+    25%{margin-left:-1050px;
+        transform: scale(1)}
+    45%{margin-left:-1050px;
+        transform:scale(1.5)}
+
+    55%{margin-left:-1800px;
+        transform:scale(1)}
+    
+    
+    60%{margin-left:-2200px;
+        transform:scale(1.5)}
+    
+    70%{margin-left:-2350px;}
+  
+
+
+    100%{margin-left:-2550px;}
+}

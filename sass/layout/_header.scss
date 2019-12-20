@@ -1,15 +1,16 @@
 .header{
     height:495px; 
     position:relative;
-    width:100%;
+    max-width:1200px;
     display:flex;
    
      
     &__container{
-        background:$color-blue;
+        background:linear-gradient(90deg,$color-blue 83%,transparent 83%);
         padding:25px 4px 80px 45px;
         display:flex;
-        width:600px;
+        flex-direction:column;
+        align-items:center;
         height:100%;
         flex-wrap:wrap; 
     }
@@ -20,23 +21,30 @@
 
     &__banner{
         display:flex;
+        max-width:min-content;
     }
 
     &__nav{
         z-index:1; 
+        font-size:1.2em;
     }
 
     &__paragraph{ 
         flex:0 1 auto;
         margin-right:190px;
         margin-left:122px;  
-        font-size:1.6em;
+        font-size:2em;
         color:$color-white;
         font-weight: bold;
 
     }
 
+    &-icon{
+        display:none;
+    }
+
     &__separation{
+        position:relative;
         z-index:1;
         margin-bottom:180px;
         /*position:relative;*/
@@ -45,14 +53,14 @@
     
     &__box2::after{
         content:"";
-        background:linear-gradient(90deg,rgba(225, 255, 255, 0.2) 25% ,
-                rgba(255,255,255, 0.1) 49%,rgba(255,255,255,0.2) 20%,
-                 rgba(255,255,255,0) 94% , rgba(255,255,255,0.1) 0%,
-                 rgba(255,255,255,0.1) 55%), $color-blue;
+        background:linear-gradient(90deg,rgba(225, 255, 255, 0.2) 9% ,
+                rgba(255,255,255, 0.1) 27%,rgba(255,255,255,0.2) 20%,
+                 rgba(255,255,255,0) 52% , rgba(255,255,255,0.1) 40%,
+                 rgba(255,255,255,0.1) 96%), $color-blue;
         height:600px;
-        width:595px;
+        width:100%;
         position:absolute;            
-        left:514px;          
+        left:500px;          
         transform:$transform-skew;  
     }
 }

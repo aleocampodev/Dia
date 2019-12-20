@@ -10,6 +10,7 @@
     <title>Dia</title>
 <link href="main.css" rel="stylesheet"></head>
 <body>
+<div id="body">hola</div>
 <header class="header"> 
     <div class="header__container">
         <div class="header__banner">
@@ -19,7 +20,7 @@
             <nav class="header__nav">
                 <ul class="nav">
                     <li><a href="#">Home</a></li>
-                    <li><a href="#">About us</a></li>
+                    <li><a href="#" >About us</a></li>
                     <li><a href="#">Services</a></li>
                     <li><a href="#">Work</a></li>
                     <li><a href="#">Contact Us</a></li>
@@ -27,6 +28,7 @@
                 </ul>
             </nav>
         </div>
+        <i class="fas fa-align-justify header-icon" id="hamburguer"></i>
         <div class="header__separation">
             <div class="header-box">
                 <h2 class="header-box__title"><strong class="header-box__bold header-box__bold--1">Global digital agency</strong></h2>
@@ -44,31 +46,55 @@
         <div class="row">
             <div class="intro">
                 <div class="containers">
-                    <div class="containers__buttons">
-                        <img src="05f878fc7792b8dd43af996309016433.png" class="buttons__left size">
-                        <img src="a2ac0f2468a7ac2216c84fb879cf8620.png" class=" buttons__right size">    
+                   <div class="containers__buttons">
+                        <img src="05f878fc7792b8dd43af996309016433.png" class="buttons__left size" id="left-button">
+                        <img src="a2ac0f2468a7ac2216c84fb879cf8620.png" class=" buttons__right size" id="right-button">    
                     </div>
-                    <div class="containers__slider containers__slider--1">
-                        <div class="slider-text">
-                            <p class="slider-text__title">Intro</p>
-                            <p class="slider-text__paragraph">By the same illusion which lifts the horizon</p>
+                    <div id="movie">
+                        <div class="inner">
+                            <div class="containers__slider containers__slider--1">
+                                <div class="sliders sliders--1">
+                                    <img  src="bc0fe92cd9f8c8725a2f0fdaacca7026.png" class="containers__img">
+                                    <div class="slider-text">
+                                        <p class="slider-text__title">Intro</p>
+                                        <p class="slider-text__paragraph">By the same illusion which lifts the horizon</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="containers__slider containers__slider--2">
+                                <div class="sliders sliders--2">
+                                    <img src="16f47f6e1b92cf741de4b9e9b760fa1b.jpg" class="containers__img">
+                                    <div class="slider-text">
+                                        <p class="slider-text__title">Intro</p>
+                                        <p class="slider-text__paragraph">By the same illusion which lifts the horizon</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="containers__slider containers__slider--3">
+                                <div class="sliders sliders--3">
+                                    <img src="1a0cb8cd7773690b6e8d13d7701c59de.jpg" class="containers__img">
+                                    <div class="slider-text">
+                                        <p class="slider-text__title">Intro</p>
+                                        <p class="slider-text__paragraph">By the same illusion which lifts the horizon</p>
+                                    </div> 
+                                </div>
+                            </div>
+                            <div class="containers__slider containers__slider--4">
+                                <div class="sliders sliders--4">
+                                    <img src="4e8613eb1c4979258da805715c0fb615.jpeg" class="containers__img">
+                                    <div class="slider-text">
+                                        <p class="slider-text__title">Intro</p>
+                                        <p class="slider-text__paragraph">By the same illusion which lifts the horizon</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                    <!--<div class="intro__slider intro__slider--2">
-                            <div class="intro-team">
-                                <p class="intro-team__">Team</p>
-                                <p>A good team</p>
-                            </div>
-                        <div>
-                        <div>
-                            <p>Flexibility</p>
-                            <p>Flexibility of time</p>
-                        </div>-->
                 <div class="social">
-                    <p class="social__item">Facebook</p>
-                    <p class="social__item">Twitter</p>
-                    <p class="social__item">Instagram</p>
+                    <p class="social__item social__item--1">Facebook</p>
+                    <p class="social__item social__item--2">Twitter</p>
+                    <p class="social__item  social__item--3">Instagram</p>
                 </div>
             </div>
         </div>
@@ -78,7 +104,7 @@
         <div class="row">
             <div class="about">
                 <div class="welcome">
-                    <div class="box-title">
+                    <div class="box-title wite">
                         <img src="cc6b94609d95886e8a87cd469ab13c84.png" class="box-title__vector">
                         <p class="box-title__text">welcome</p>
                     </div>
@@ -125,7 +151,7 @@
         <div class="row">
             <div class="process">
                 <div class="process__left">
-                    <div class="box-title">
+                    <div class="box-title procest left">
                         <img src="cc6b94609d95886e8a87cd469ab13c84.png" class="box-title__vector">
                         <p class="box-title__text">Process</p>
                     </div>
@@ -259,7 +285,7 @@
     <section class="section-testimonials container">
         <div class="row">
             <div class="testimonials">
-                <div class="box-title">
+                <div class="box-title textimonialx">
                     <img src="cc6b94609d95886e8a87cd469ab13c84.png" class="box-title__vector">
                     <p class="box-title__text">Testimonials</p>
                 </div>

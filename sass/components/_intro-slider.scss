@@ -1,39 +1,52 @@
 .intro{
-    width:100%;
+    max-width:1200px;
     display:flex;
     justify-content:center;
     align-items:center;
-    margin-top:-55px;
-    margin-left:18%;
+    /*margin-top:-55px;*/
+    /*margin-left:15%;*/
+    height:0;
+    position: relative;
+    padding-bottom:35%;
+   
+
+
 }
 
 .containers{
-    width:1543px;
-    height:435px;
-    margin-left:-11px;
-    position:relative;
+    width:65%;
+    display:flex;
+    position:absolute;
+    height:100%;
+    margin-top:18%;
+  
 
-    &__slider--1{ 
-        width:1003px; 
-        height:100%;
-        background-image: url('../img/team-min.png');
-        margin:0 0 0 54px;
-        background-size:100% 100%;
-        background-repeat:no-repeat;
-        background-position-y:-3px; 
+    
+
+    &__slider{ 
+        width:100%;
         display:flex;
-        align-items:flex-end;
-        margin-left:101px;
+        align-items:baseline;
+        position:relative;
+        height:100%;
+        flex:1 0 auto;
+    }
+
+    
+    &__img{
+        width:100%;
+        height:100%;
+        position:absolute;
     }
 
     &__buttons{
-        position:absolute;
-        top:215px;
-        left:39px;
-        width:110px;
-        height:39px;
+        margin-left:-8%;
+        margin-top:19%;
+        width:15%;
+        height:10%;
         background:$color-orange;
         border-radius:30px;
+        z-index:1;
 
     }
 
@@ -41,34 +54,70 @@
 
 .buttons{
      &__left{
-            margin-top:12px;
-            margin-left:20px;
+        margin-top:10%;
+        margin-left:18%;
+        cursor: pointer;
      }
 
      &__right{
-        margin-left:42px;
+        margin-left:40%;
+        cursor:pointer;
      }
 }
 
-.slider-text{
-    margin-left:95px;
-    margin-bottom:68px;
+.slider{
+    position:relative;
 
-    &__title{
-        color:$color-blue;
-        text-transform:uppercase;
-        font-size:0.7em;
-        font-weight:900;
+    &-text{
+        margin-left:95px;
+        margin-top:35%;
+        position:absolute;
+        text-shadow:1px 1px 2px black;
+
+        &__title{
+            color:$color-blue;
+            text-transform:uppercase;
+            font-size:1em;
+            font-weight:900;
+        }
+
+        &__paragraph{
+            color:$color-white;
+            width:180px;
+            font-size:0.9em;
+            font-weight:900;
+            font-family:'Muli',sans-serif;
+        }
     }
 
-    &__paragraph{
-        color:$color-white;
-        width:180px;
-        font-size:0.8em;
-        font-weight:900;
-        font-family:'Muli',sans-serif;
-    }
+    
 }
+
+#movie{
+    position:absolute;
+    width:100%;
+    height:100%;
+    display:flex;
+    overflow:hidden;
+   
+}
+
+.inner{
+    position:absolute;
+    width:100%;
+    display:flex;
+   /* animation:slider 35s infinite ;
+    animation-delay: 1s;
+    animation-timing-function: ease-in-out;*/
+    flex-direction: row;
+}
+
+.sliders{
+    padding-bottom:52%;
+    width:100%;
+    position:relative;
+}
+
 
 
 

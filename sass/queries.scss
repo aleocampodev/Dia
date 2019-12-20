@@ -3,13 +3,17 @@
         overflow: hidden;   
     }
 
-    .header__container{
-        width:83%;
-    }
-    .header__box2::after{
-        position:absolute;
-        left:46%;
+
+
+    .header{
+
+    
+        &__box2::after{
+            position:absolute;
+            left:46%;
+       
         
+        }
     }
 
     
@@ -20,6 +24,7 @@
 
     .feature__boxtext{
         margin-left:22%;
+        margin-top:-3%;
     }
 
     .testimonials{
@@ -32,46 +37,287 @@
     body{
         overflow:hidden;
     }
+    .header{
 
-    .header__box2:after{
-        left:40%;
+        &__container {
+            background:linear-gradient(90deg, $color-blue 73%, transparent 73%);
+        }
+
+        &-box{
+           /* padding-left:295px;*/
+        }
+    
+        &__box2::after{
+            position:absolute;
+            left:40%;
+            width:60%;
+        
+        }
+
+
+        &__paragraph{
+            margin-left:15%;
+            margin-right: 0;
+        }
+
+        &__nav{
+            margin-left:25%;
+
+            & li:last-child{
+                margin-left:5%;
+            }
+        }
+
+        &__separation{
+            margin-left:-5%;
+        }
+
+        &__banner{
+            margin-right:285px;
+        }
     }
 
+    
 
+  
 
-    .containers{
-        margin-left:-3.7%;
+   .containers{
+        max-width:850px;
+   }
+
+    .box{
+        margin-right:53px;
+
+        &:nth-child(2){
+            margin-right:55px;
+        }
     }
+
+    .wedo{
+       margin-left:7%;
+
+        &__boxes{
+            margin-right:0;
+        }
+
+        &__title{
+            margin-right:95px;
+        }
+}
+
+  
 
     .section-feature{
         width:100%;
     }
 
-    .containers{
-        background:orange;
-        width:60%;
+    .section-about{
+        margin-top:-5%;
+    }
 
-        &__slider--1{
-            width:120%;
+   
+
+    .social{
+        position:relative;
+        left:16%;
+    }
+
+    .feature {
+        &__boxtext{
+            top:55px;
+        }
+
+        &__left{
+            right:-105px;
+        }
+        &__right{
+            right:-105px;
         }
     }
+
+    .process__left{
+        margin-right:185px;
+    }
+
+    .testimonials{
+        margin-left:95px;
+    }
+
     
     
 }
 
 @media only screen and (max-width:900px){
+    
     .row{
         margin:0 auto;
         width:100%;
     }
 
-    .feature{
-        width:1200px;
+    #body{
+        display:block;
+        position:fixed;
+        height:100%;
+        width:100%;
+        z-index:2;
+        background-color:black;
+        opacity:0.5;
+        top:0;
+        left:0;
+        margin:0;
+        transform:translateX(-100%);
+        transition:all 0.5s ease-in-out;
     }
 
-    .wedo__boxes{
+    .header{
+
+
+        &__container {
+            background:linear-gradient(90deg, $color-blue 73%, transparent 73%);
+        
+        }
+
+        &__box{
+           width:100%;
+
+        }
+
+        &__box2::after{
+            width:70%;
+            left:30%;
+        }
+
+        &__banner{
+            margin-right:70%;
+        }
+
+        &__paragraph{
+            margin-left:10%;
+        }
+
+        &-box{
+            margin-left: 0;
+            padding-left:29%;
+
+            &__title{
+                width:60%;
+            }
+
+            &__text{
+                font-size:1.1em;
+            }
+        }
+
+        &__nav{
+          width:75%;
+          height:150%; 
+          background:$color-blue;
+          position:fixed;
+          top:0;
+          left:0;
+          margin:0;
+          z-index:2;
+            transform: translateY(-30px) translateX(-150%);
+          transition:all 0.5s ease-in-out;
+
+           li{
+              width:30%;
+              border-bottom: 1px solid $color-orange;
+              margin-bottom:45px;
+              transition:all 1s;
+
+              a{
+                  margin-left: 25%;
+
+              }
+
+              
+                &:hover{
+                    border-bottom:3px solid $color-orange;
+                }
+           }
+
+
+          li:last-child {
+              margin-left: 0;
+              border-bottom:1px solid $color-orange;
+
+          }
+            li:nth-child(5){
+              margin-left:0;
+
+
+          }
+
+          li:first-child{
+            margin-top:15px;
+          }
+
+
+
+        }
+
+        &__hamburguer{
+            transform:translateX(0);
+         
+        }
+
+
+      &-icon{
+            display:block;
+            color:white;
+            font-size:2em;
+            position:absolute;
+            right:70px;
+            z-index:1;
+            cursor:pointer;
+
+        }
+
+        &__separation{
+            margin-left:-120%;
+            margin-top:25px;
+
+        }
+    }
+
+
+
+    .feature{
+        width:1200px;
+
+        &__boxtext{
+            margin-left:55px
+        }
+
+        &__left{
+            right:265px;
+        }
+
+        &__right{
+            left:545px;
+           
+        }
+    }
+
+    .welcome{
+        width:100%;
+    }
+
+
+    .wedo{
+        width:100%;
+        margin-left:0;
+
+    }
+
+    .process{
+        margin:0;
         display:flex;
-        flex-direction:column;
+      
+        justify-content: center;
+        align-items: center;
+
     }
 
     .objetives{
@@ -79,17 +325,605 @@
 
     
     }
+    .box{
+        width:135px;
+        margin-bottom:55px;
+        margin:0 55px;
 
-    .feature{
-        width:100%
+       
+
+        &__text{
+            font-size:1em;
+            width:100%;
+            
+            
+        }
+
+        &__paragraph{
+            font-size:0.8em;
+            width:100%;
+        }
+
+        &:nth-child(1){
+            margin-right: 5px;
+        }
+
+        &:nth-child(3){
+            margin-left:5px;
+            margin-right: 15px;
+        }
+      
+
     }
+
+    .section-process{
+        margin-top:55px;
+    }
+
+    .section-feature{
+        margin-top:489px;
+    }
+
+
+    .testimonials{
+        &__boxes{
+            flex-direction:column;
+        
+            margin-left:28%;
+        }
+
+        &__box1,&__box2{
+            margin-bottom:30px;
+        }
+
+        &__title{
+            width:100%;
+            margin-left:8%;
+        }
+    }
+
+    .process{
+        flex-direction:column;
+
+        &__left{
+            width:100%;
+            text-align:center;
+        }
+
+        &-text__paragraph{
+            width:100%;
+        }
+
+        &__right{
+            width:100%;
+            margin-top:10%;
+            margin-left:60%;
+
+        }
+
+    }
+
+    .objetives__text{
+        width:100%;
+    }
+
+    .information__left{
+        width:225px;
+        margin-right:95px;
+    }
+
+    .form__input{
+        width:220px;
+    }
+
+    .left{
+        margin-left:15%;
+    }
+
+    .nav{
+        flex-direction: column;
+        margin-left: 40%;
+    }
+   
+
+    .head{
+        &__box--1{
+            margin-left:5%;
+        }
+
+        &__box--2, &__box--3{
+            margin-left:15px;
+        }
+        &__img--1{
+            position:relative;
+            top:2em;
+            right:19%;
+        }
+
+        &__img--2{
+            position:relative;
+            top:35px;
+            right:20%;
+        }
+        &__img--3{
+            position: relative;
+            top:35px;
+            right:20%;
+        }
+    
+
+    }
+
+    .objetives{
+        &__box{
+            &--1{
+                left:797px;
+            }
+
+            &--2{
+                left:150px;
+                top:-5em;
+            }
+
+            &--3{
+                left:755px;
+            }
+        }
+
+        &__box1{
+            &--1{
+                left:122px;
+                
+            }
+        }
+    }
+
+    .form__label{
+        left:5%;
+    }
+
+    .social__item{
+        font-size:0.5em;
+        
+        &--2{
+            top:80px;
+        }
+
+        &--3{
+            top:165px;
+        }
+    }
+   
+
     
 }
 
 @media only screen and (max-width:600px){
+    body{
+        font-size:1em;
+    }
+    .header{
+        
+        &__container{
+            width:90%;
+            display:flex;
+            flex-direction:column;
+            align-items: center;
+        }
+
+        &__paragraph{
+            margin-left:-45%
+        }
+
+        &-box{
+            padding-right:15%;
+
+            &__title{
+                width:90%;
+                font-size:1.2em;
+            }
+        }
+
+        &__separation{
+            margin-left:-150%;
+        }
+
+        &__box2::after{
+            width:60%
+        }
+
+
+    }
+
+    .buttons{
+
+        &__left , &__right{
+            margin-bottom: 6%;
+        }
+    }
+
+    .feature{
+        width:1200px;
+
+
+    }
+
+    .features{
+        &__paragraph{
+            font-size:0.8em;
+        }
+    }
+
+    .welcome{
+        width:100%;
+
+        &__paragraph{
+            font-size:0.8em;
+        }
+    }
+
+
+    .wedo{
+        width:100%;
+
+        &__title{
+            font-size:1.5em;
+        }
+
+        &__text{
+            width:100%;
+            text-align:center;
+        }
+
+
+
+        &__boxes{
+            display:flex;
+            flex-direction:column;
+           
+        }
+    }
+
+    .box{
+        &:nth-child(1){
+            margin-right:52px;
+        }
+    }
+
+    .slider-text{
+        margin-left:15%;
+        margin-top:25%;
+        font-size:0.8em;  
+
+    }
+
+    .process{
+        margin:0;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        
+        &-text{
+            width:100%;
+            margin-left:17%;
+
+            &__title{
+                width:100%;
+               
+            }
+
+            &__paragraph{
+                width:100%;
+                
+            }
+        }
+
+        &__left{
+            width:100%;
+        }
+
+        &__right{
+            margin-top:85px;
+            margin-left:329px;
+
+        }
+    }
+
+    .objetives{
+        width:1200px;
+
+        &__paragraph{
+            font-size:0.9em;
+        }
+
+    
+    }
+    .box{
+
+        margin-bottom:55px;
+        width:100%;
+        text-align:center;
+
+        &__text{
+            width:100%;
+        }
+    }
+
+    .section-process{
+        margin-top:55px;
+    }
+
+    .section-feature{
+        margin-top:489px;
+    }
+
+    .section-about{
+        margin-top: -5%;
+    }
+
+    .section-intro{
+        top:-55px;
+    }
+
+    .feature{
+        width:100%;
+
+        &__boxtext{
+            margin-left:55px
+        }
+
+        &__left{
+            left:110px;
+        }
+    }
+
+    .testimonials{
+        &__boxes{
+            flex-direction: column;
+            width:100%;
+            margin-left:18%;
+        }
+
+        &__box1,&__box2{
+            margin-bottom:30px;
+        }
+
+        &__title{
+            width:100%;
+            margin-left:8%;
+        }
+    }
+    .textimonialx{
+        margin-left:5px;  
+    }
+
+    .procest{
+        margin-left:25%;
+    }
+
+    .information{
+        margin-left:65px;
+
+        &__left{
+            margin-right:25px;
+        }
+    }
+
+    .footer{
+        
+        &__list{
+            margin-right:0;
+        }
+    }
+
+    .social__item{
+        &--2{
+            top:60px;
+        }
+
+        &--3{
+            top:125px;
+        }
+    }
+
+    
 
 }
 
 @media only screen and (max-width:488px){
-    
+    body{
+        font-size:0.8em;
+    }
+
+    .header{
+        height:295px;
+
+        &__container{
+          width:95%;
+        }
+
+        &__paragraph{
+            position:absolute;
+            z-index:2;
+            margin-left:-5%;
+        }
+
+        &__nav{
+            width:65%;
+
+            & li a{
+                margin-left:0;
+
+            }
+
+            & li:nth-child(5){
+                    width:45%;
+                }
+
+        }
+
+        &-box{
+
+            &__title{
+                width:50%;
+            }
+
+            &__text{
+                width:45%;
+            }
+
+            &__button{
+                width:120px;
+                height:30px;
+            }
+          
+        }
+
+       
+
+        &__box2{
+            &::after{
+                width:96%;
+                margin-left:-125px;
+                height:400px;
+            }
+        }
+    }
+
+
+    .process{
+        &-text{
+            margin-left:22%;
+        }
+        
+    }
+
+    .boxestexts{
+        &--1{
+            margin-left:2px;
+            margin-top:65px;
+        }
+
+        &--2{
+            margin-left:-16px;
+            margin-top:315px;
+        }
+
+        &--3{
+            margin-top:558px;
+            margin-left:12px;
+        }
+
+        &--4{
+            margin-top:790px;
+            margin-left:12px;
+        }
+    }
+
+    .boxcolor{
+        &--1{
+            top:15px;
+            left:77px;
+        }
+
+        &--2{
+            top:269px;
+            left:88px;
+        }
+
+        &--3{
+            top:515px;
+            left:85px;  
+        }
+
+        &--4{
+            top:749px;
+            left:79px;
+        }
+    }
+
+    .containers__buttons{
+        width:45px;
+        height:19px;
+    }
+
+    .buttons{
+         &__left{
+             margin-top:5px;
+         }
+    }
+
+    .procest{
+        margin-left:35%;
+    }
+
+    .section-feature{
+        margin-top:969px;
+    }
+
+    .section-intro{
+        top:70px;
+    }
+
+    .social__item{
+        &--1{
+            top:-25px;
+            left:2px;
+        }
+
+        &--2{
+            top:30px;
+        }
+
+        &--3{
+            top:85px;
+        }
+    }
+
+    .section-about{
+        margin-top:35%;
+    }
+
+    .textimonialx{
+        margin-left:-22px;  
+    }
+
+    .testimonials{
+        &__boxes{
+            margin-left:-1%;
+        }
+    }
+
+    .objetives{
+        &__paragraph{
+            width:80%;
+        }
+    }
+
+    .information{
+        display:flex;
+        flex-direction:column;
+
+        &__left{
+            margin-bottom:125px;
+        }
+    }
+
+    .footer{
+        &__list{
+            margin-right:-5px;
+        }
+
+        &__item{
+            margin-right:20px;
+        }
+
+    }
+
+    .wite{
+        margin-left:25%;
+    }
+
 }
